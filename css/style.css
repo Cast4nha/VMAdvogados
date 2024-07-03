@@ -850,22 +850,32 @@ img {
   position: relative;
   padding: 30px;
   padding-top: 2em;
-  background: #fff;
   background: #18181c;
-  float: left;
-  width: 100%;
   text-align: center;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
   border-radius: 5px;
 }
 
-.team-column {
-  margin-bottom: 20px;
-  /* espaçamento vertical */
+.team-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaçamento entre as caixas */
 }
 
+.team-column {
+  flex: 0 1 calc(50% - 20px); /* Cada coluna ocupa 50% da largura menos o espaçamento */
+  box-sizing: border-box;
+  display: flex; /* Adiciona flex para alinhamento interno */
+  justify-content: center;
+}
+
+/* Centralizar e tornar a imagem responsiva */
+.user img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
 
 
 @media screen and (max-width: 992px) {
