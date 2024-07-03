@@ -15,7 +15,7 @@
 body {
   font-family: "Prata", serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
   color: #ffffff;
   background: #26272c;
@@ -81,9 +81,29 @@ h6 {
   margin-bottom: 0;
 }
 
-#fh5co-header #navbar.navbar-collapse {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0;
+  border: none; /* Remove a borda da navbar */
+  box-shadow: none; /* Remove sombra da navbar */
 }
+
+
+.navbar-brand {
+  padding: 10px 15px;
+}
+
+.navbar-brand img {
+  max-height: 100%;
+  width: auto;
+  display: block;
+}
+
+.navbar-toggle {
+  margin-right: 0; /* Ajusta o espaçamento do ícone de toggle na navbar */
+}
+
 
 #fh5co-header #navbar .navbar-right {
   margin-right: 0;
@@ -235,6 +255,7 @@ h6 {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   margin-top: 0px;
   top: 0;
+  border-top: none; /* Remove a borda superior quando a navbar está fixada no topo */
 }
 
 #fh5co-header.navbar-fixed-top #navbar li a {
@@ -289,8 +310,7 @@ h6 {
 
 #fh5co-header .navbar-default {
   border: transparent;
-  background: #1a1b1e;
-  background: #030000;
+  background-color: #000000;
   margin: 0;
   padding-left: 50px;
   padding-right: 50px;
@@ -298,6 +318,7 @@ h6 {
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   border-radius: 0px;
+  border: none !important; /* Remove a borda da navbar */
 }
 
 @media screen and (max-width: 768px) {
@@ -312,7 +333,7 @@ h6 {
   margin: 28px 0 0 15px;
   float: left;
   letter-spacing: 2px;
-  color: #adadad;
+  color: #ffffff;
 }
 
 #fh5co-header .navbar-default .brand-slogan em {
@@ -352,7 +373,7 @@ img {
 }
 
 #fh5co-home a {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: rgba(0, 0, 0, 0.8) !important;
   text-decoration: underline;
 }
 
@@ -918,6 +939,7 @@ img {
 }
 
 #fh5co-team .team-box h3 {
+  margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 16px;
@@ -945,7 +967,7 @@ img {
 }
 
 #fh5co-team .team-box .social-media li a {
-  color: #3e3f47;
+  color: #dec51c;
 }
 
 #fh5co-team .team-box .social-media li a:hover,
@@ -1004,7 +1026,7 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.8;
-  color: #555863;
+  color: #ffffff;
   position: relative;
   display: block;
   padding-bottom: 30px;
@@ -1186,7 +1208,7 @@ img {
 }
 
 #fh5co-footer #btn-submit {
-  color: rgba(255, 255, 255, 0.9) !important;
+  color: rgba(0, 0, 0, 0.9) !important;
   background: #dec51c !important;
 }
 
