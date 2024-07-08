@@ -414,7 +414,7 @@ img {
 #fh5co-home .text-inner h1 {
   font-size: 38px;
   text-transform: uppercase;
-  color: white;
+  color: #dec51c;
   margin: 0 0 20px 0;
   font-weight: 400;
 }
@@ -697,11 +697,11 @@ img {
 }
 
 .getting-started h3 {
-  color: #fff;
+  color: #ffffff;
 }
 
 .getting-started p {
-  color: rgba(255, 255, 255, 0.8);
+  color: #dec51c;
 }
 
 .getting-started .call-to-action {
@@ -1067,7 +1067,7 @@ img {
 
 #fh5co-footer .section-title {
   font-size: 22px;
-  color: #fff;
+  color: #dec51c;
   position: relative;
   padding-bottom: 20px;
 }
