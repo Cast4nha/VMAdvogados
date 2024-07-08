@@ -85,8 +85,10 @@ h6 {
   position: relative;
   min-height: 50px;
   margin-bottom: 0;
-  border: none; /* Remove a borda da navbar */
-  box-shadow: none; /* Remove sombra da navbar */
+  border: none;
+  /* Remove a borda da navbar */
+  box-shadow: none;
+  /* Remove sombra da navbar */
 }
 
 
@@ -101,7 +103,8 @@ h6 {
 }
 
 .navbar-toggle {
-  margin-right: 0; /* Ajusta o espaçamento do ícone de toggle na navbar */
+  margin-right: 0;
+  /* Ajusta o espaçamento do ícone de toggle na navbar */
 }
 
 
@@ -255,7 +258,8 @@ h6 {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   margin-top: 0px;
   top: 0;
-  border-top: none; /* Remove a borda superior quando a navbar está fixada no topo */
+  border-top: none;
+  /* Remove a borda superior quando a navbar está fixada no topo */
 }
 
 #fh5co-header.navbar-fixed-top #navbar li a {
@@ -318,7 +322,8 @@ h6 {
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   border-radius: 0px;
-  border: none !important; /* Remove a borda da navbar */
+  border: none !important;
+  /* Remove a borda da navbar */
 }
 
 @media screen and (max-width: 768px) {
@@ -605,35 +610,6 @@ img {
   text-align: center;
 }
 
-#fh5co-testimony .wrap-testimony .testimony-slide span {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700;
-  font-family: "Open Sans", Arial, sans-serif !important;
-}
-
-#fh5co-testimony .wrap-testimony .testimony-slide span a.twitter {
-  color: #dec51c;
-  font-weight: 300;
-}
-
-#fh5co-testimony .wrap-testimony .testimony-slide figure {
-  margin-bottom: 20px;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-}
-
-#fh5co-testimony .wrap-testimony .testimony-slide figure img {
-  width: 90px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
-
 #fh5co-testimony .wrap-testimony .testimony-slide blockquote {
   border: none;
   margin: 0 auto;
@@ -667,6 +643,34 @@ img {
   left: 50%;
   margin-left: -25px;
   bottom: 0;
+}
+
+#fh5co-testimony .wrap-testimony .testimony-slide span {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-family: "Open Sans", Arial, sans-serif !important;
+  color: #fff;
+  margin-top: 15px;
+}
+
+#fh5co-testimony .wrap-testimony .testimony-slide span a {
+  color: #dec51c;
+  font-weight: 300;
+}
+
+#fh5co-testimony .wrap-testimony .testimony-slide figure {
+  margin-bottom: 20px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+#fh5co-testimony .wrap-testimony .testimony-slide figure img {
+  width: 90px;
+  border-radius: 50%;
 }
 
 #fh5co-testimony .wrap-testimony .testimony-slide.active {
@@ -880,13 +884,16 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px; /* Espaçamento entre as caixas */
+  gap: 20px;
+  /* Espaçamento entre as caixas */
 }
 
 .team-column {
-  flex: 0 1 calc(50% - 20px); /* Cada coluna ocupa 50% da largura menos o espaçamento */
+  flex: 0 1 calc(50% - 20px);
+  /* Cada coluna ocupa 50% da largura menos o espaçamento */
   box-sizing: border-box;
-  display: flex; /* Adiciona flex para alinhamento interno */
+  display: flex;
+  /* Adiciona flex para alinhamento interno */
   justify-content: center;
 }
 
@@ -912,11 +919,13 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px; /* Espaçamento entre as caixas */
+  gap: 20px;
+  /* Espaçamento entre as caixas */
 }
 
 .team-column {
-  flex: 0 1 calc(50% - 20px); /* Cada coluna ocupa 50% da largura menos o espaçamento */
+  flex: 0 1 calc(50% - 20px);
+  /* Cada coluna ocupa 50% da largura menos o espaçamento */
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -924,7 +933,8 @@ img {
 
 @media screen and (max-width: 992px) {
   .team-column {
-    flex: 0 1 100%; /* Cada coluna ocupa 100% da largura em telas menores */
+    flex: 0 1 100%;
+    /* Cada coluna ocupa 100% da largura em telas menores */
   }
 }
 
@@ -1535,3 +1545,53 @@ img {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* Estilos para a seção de Escritórios */
+#escritorios {
+  background-color: black;
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: white; /* Cor do título */
+}
+
+.office-grid {
+  display: flex;
+  flex-direction: column; /* Ajusta para exibir os itens em coluna */
+  align-items: center; /* Centraliza os itens verticalmente */
+  gap: 40px; /* Espaçamento entre os itens */
+}
+
+.office-item {
+  text-align: center;
+  width: 100%; /* Garante que os itens ocupem toda a largura disponível */
+  padding: 40px; /* Espaçamento interno */
+  background-color: white; /* Cor de fundo dos itens */
+  border-radius: 12px; /* Raio da borda */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  max-width: 800px; /* Largura máxima dos itens */
+  margin: 0 auto; /* Centraliza os itens horizontalmente */
+}
+
+.office-item img {
+  width: 100%; /* Largura da imagem */
+  max-width: 100%;
+  border-radius: 12px; /* Raio da borda da imagem */
+  margin-bottom: 30px; /* Espaço abaixo da imagem */
+}
+
+.office-item h3 {
+  font-size: 2rem; /* Tamanho do título */
+  margin-bottom: 15px; /* Espaço abaixo do título */
+  color: #333; /* Cor do título */
+}
+
+.office-item p {
+  font-size: 1.4rem; /* Tamanho do texto */
+  color: #666;
+}
