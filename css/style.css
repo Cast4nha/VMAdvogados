@@ -3102,7 +3102,7 @@ img {
   text-align: center;
   margin-bottom: 40px;
   font-size: 2.5rem;
-  color: #ffffff; /* Cor do título */
+  color: white; /* Cor do título */
 }
 
 .office-carousel {
@@ -3142,13 +3142,9 @@ img {
   transition: transform 0.5s ease; /* Transição suave */
 }
 
-/* Esconde os botões de navegação */
-.owl-nav {
-  display: none;
-}
-
-/* Esconde os dots (opcional) */
-.owl-dots {
-  margin-top: 20px;
-  display: none; /* Esconde os dots */
+/* Ajustes para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  .image-container {
+    height: 300px; /* Ajusta a altura para dispositivos móveis */
+  }
 }
